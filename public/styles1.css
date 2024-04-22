@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.title{
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+      color:#EFBC9B;
+      font-size:40px;
+     padding-left:5%;
+}
+.list{
+  list-style-type:none;
+  display:flex;
+  position:absolute;
+  left:65%;
+  top:0;
+}
+.list1, .list2, .list3{
+  padding-right:32px;
+  font-family: "Inter", sans-serif;
+  font-size:28px;
+  color:white;
+}
+.image{
+  width:1000px;
+  height:500px;
+  overflow:hidden;
+  position:absolute;
+  left:60%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+.img2{
+  position:absolute;
+  left:80%;
+  top:37.5%;
+  transform: translate(-50%, -50%);
+  border-radius:14px;
+}
+.img3{
+  position:absolute;
+  right:20.6%;
+  top:37.5%;
+  transform: translate(-50%, -50%);
+  height:325px;
+  border-radius:14px;
+}
+.img4{
+  position:absolute;
+  right:55.5%;
+  top:37.5%;
+  transform: translate(-50%, -50%);
+  height:325px;
+  border-radius:14px;
+}
+.btn1{
+  position:absolute;
+  left:19.5%;
+  top:35%;
+  border-radius:100%;
+  width:35px;
+  height:35px;
+}
+.btn2{
+  position:absolute;
+  right:14%;
+  top:35%;
+  width:35px;
+  height:35px;
+  border-radius:100%;
+
+}
+.btn1, .btn2{
+  outline:none;
+  border:none;
+  background-color: #9CAFAA;
+  color:#FBF3D5;
+}
+.btn1::before,
+.btn2::before {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+.btn1::before {
+    left: 5px; 
+}
+
+.btn2::before {
+    right: 5px;
+}
+.create{
+  width:458px;
+  height:126px;
+  border-radius:80%;
+  position:absolute;
+  top:470px;
+ left:550px;
+ background-color:#9CAFAA ;
+ outline:none;
+ border:none;
+ color:#FBF3D5;
+ font-family: "Inter", sans-serif;
+    font-size:80px;
+    cursor:pointer;
+
+}
+.createout{
+  width:461px;
+  height:150px;
+  border-radius:80%;
+  transform:rotate(-8.18deg);
+  background-color:transparent;
+  color:transparent;
+  position:absolute;
+  top:68%;
+  left:35%;
+  cursor:pointer;
+}
+h2{
+  position:absolute;
+  top:10%;
+  left:40%;
+  font-family:"Inter",sans-serif;
+  font-size:60px;
+  color:#EFBC9B;
+}
+.one{
+  position:absolute;
+  top:110%;
+  left:15%;
+  font-family: "Inter", sans-serif;
+  font-size:40px;
+  margin-bottom: 20px; 
+  padding-bottom:20px;
+}
+.two{
+  position:absolute;
+  top:120%;
+  left:15%;
+  font-family: "Inter", sans-serif;
+  font-size:40px;
+  padding-bottom:20px;
+  margin-bottom: 20px; 
+}
+.blog-entry{
+  margin-bottom:20px;
+  display:flex;
+}
+.space{
+  position:absolute;
+  top:110%;
+  left:15%;
+  font-family: "Inter", sans-serif;
+  font-size:40px;
+  margin-bottom: 20px; 
+  padding-bottom:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  margin-bottom:20px;
+  margin-top:20px;
+}
+.blog-entry {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.title h1 {
+  margin: 0; /* Reset default margin */
+}
+
+.description p {
+  margin-top: 10px; /* Adjust as needed */
+}
+.blog-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #EFBC9B; 
+  margin-bottom: 10px;
+  font-family:"Inter",sans-serif ;
+}
+.blog-entry {
+  display: flex;
+  flex-direction: column;
+  /* Add other styling properties */
+}
+.blog-description {
+  font-size: 18px;
+  color: #666; 
+  line-height: 1.5;
+  color:#FBF3D5;
+  font-family:"Inter",sans-serif ;
+}
+.onework .blog-entry:first-child .blog-content {
+  margin-top: 20px;
+}
+
+/* Remove margin-top from .blog-content elements that are not the first child */
+
+/* Apply margin-top: 20px; to .blog-content elements that come after the first one */
+.createbtn {
+  margin-top: 20px;
+  margin-right: 20px; /* Add right spacing */
+}
+
+.blog-heading {
+  margin-top: 20px;
+  margin-right: 20px; /* Add right spacing */
+}
+
+.onework {
+  margin-top: 20px;
+  margin-right: 20px; /* Add right spacing */
+}
+
+/*Apply margin-top: 50%; to the first .blog-content element */
+ .onework > .container:first-child .blog-content {
+  margin-top: 8%;
+}
+
+/* Remove margin-top from .blog-content elements that are not the first child */
+.onework > .container:not(:first-child) .blog-content {
+  margin-top: 0;
+}
+body{
+    border:15px solid white;
+    background: #9CAFAA;
+    margin:0px;
+    padding:10px;
+}

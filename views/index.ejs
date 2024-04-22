@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1 class="title">Dream Wave.</h1>
+    <ul class="list">
+        <li class="list1">Home</li>
+        <li class="list2">Contact</li>
+        <li class="list3">Login/Signup</li>
+    </ul>
+    <div class="image">
+        <div class="img">
+            <!-- <img class="img1" src="/one.png" alt="yo"> -->
+            <img class="img2" src="/two.png" alt="">
+            <img class="img3" src="/three.png" alt="">
+            <img class="img4" src="/four.png" alt="hey">
+        </div>
+    </div>
+
+    <div class="createbtn">
+        <button class="create" id="createbtn" name="createbtn">Create</button>
+        <button class="createout"></button>
+    </div>
+    <h2>MY BLOGS</h2>
+    <div class="onework">
+        <% blogs.forEach(blog => { %>
+            <div class="container">
+                <div class="blog-entry">
+                    <div class="blog-entry1"></div>
+                    <div class="blog-content">
+                        <div class="blog-title"><%= blog.title %></div>
+                        <% if (typeof blog.description === 'string') { %>
+                            <div class="blog-description">
+                                <%= blog.description.substring(0,100) +"..."%>
+                                <a href="/more" class="read-more">Read More</a>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+    
+    
+    <script src="/index.js"></script>
+    <script>
+        function redirect() {
+            console.log("Redirect function called"); 
+            window.location.href = "/create"; // Redirect to the create page
+        }
+        document.getElementById("createbtn").addEventListener("click", redirect);
+    </script>
+</body>
+</html>
